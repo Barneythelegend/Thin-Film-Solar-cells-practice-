@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d1728" />
+  <meta name="description" content="Thin-Film Solar Cells 英文題庫：209 題、講義頁碼、中文詳解、英文手寫標準答案、計算題判分、錯題重練與模擬考。" />
+  <title>Solar Cell Exam Lab — 薄膜太陽能電池題庫</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell" id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-icon" aria-hidden="true">☀</div><div><div class="brand-title">Solar Cell <span>Lab.</span></div><div class="brand-tag">THIN-FILM EXAM PREP</div></div></div>
+      <div class="navlabel">WORKSPACE</div>
+      <nav aria-label="主要功能">
+        <button class="nav-item active" data-view="practice"><span>◈</span> 題庫練習 <small id="navCount">209</small></button>
+        <button class="nav-item" data-view="exam"><span>▤</span> 模擬考試</button>
+        <button class="nav-item" data-view="wrong"><span>↺</span> 錯題重練 <small id="wrongCount">0</small></button>
+        <button class="nav-item" data-view="notes"><span>✎</span> 英文手寫答案</button>
+        <button class="nav-item" data-view="progress"><span>◫</span> 學習進度</button>
+      </nav>
+      <div class="side-divider"></div>
+      <div class="side-heading"><span class="navlabel">LECTURE CHAPTERS</span><button id="allChapters" class="plain-tiny" title="顯示全部章節">全部</button></div>
+      <div id="chapterNav" class="chapter-nav"></div>
+      <div class="sidebar-bottom"><div class="source-mini"><strong>REVIEW SOURCE</strong><span>Solar Cell-Review.pdf</span><span>53 PDF pages · NCHU</span></div><button id="openPdfModal" class="side-link">查看講義頁碼說明 ↗</button></div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar"><div class="top-left"><button id="mobileMenu" class="icon-btn menu-btn" aria-label="開啟章節選單">☰</button><span class="top-kicker">NCHU · THIN-FILM SOLAR CELLS</span></div><div class="top-right"><span class="sync-light"></span><span>進度儲存於此裝置</span><button class="top-help" id="helpBtn" title="使用說明">?</button></div></header>
+      <main class="main" id="main" aria-live="polite"></main>
+      <footer class="footer"><span>Built for classmates, not an official examination.</span><span>中英文解釋 · 課堂講義 PDF 頁碼 · No login required</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="dialogRoot"></div>
+  <script src="questions-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
